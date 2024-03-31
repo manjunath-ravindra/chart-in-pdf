@@ -7,7 +7,7 @@ const fs = require("fs");
     const page = await browser.newPage();
 
     await page.goto("file://" + process.cwd() + "/index.html");
-    await page.waitForSelector("#myChart", { visible: true });
+    // await page.waitForSelector("#myChart", { visible: true });
 
     const pdf = await page.pdf({
       format: "A4",

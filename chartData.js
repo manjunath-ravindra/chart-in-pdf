@@ -1,5 +1,5 @@
-let redData = [1, 71, 136, 250, 222, 153, 153];
-let greyData = [3, 2, 1, 600, 0, 0, 0];
+let redData = [1, 71, 236, 158, 173, 153, 151];
+let greyData = [3, 2, 1, 2, 0, 0, 0];
 
 function getChartData() {
   let chartData = {
@@ -27,6 +27,9 @@ function getChartData() {
       devicePixelRatio: 3,
       interaction: { mode: "index", intersect: false },
       stacked: false,
+      animation: {
+        duration: 0,
+      },
       plugins: {
         title: {
           display: true,
@@ -77,7 +80,6 @@ function getChartData() {
           },
         },
         y: {
-          type: "linear",
           display: false,
           position: "left",
           grid: { drawOnChartArea: false },
